@@ -2,9 +2,9 @@
 
 "A Clockwork Orange" - string
 42 - integer
-09/02/1945 - integer
+09/02/1945 - date
 98.7 - float
-$15.99 - integer
+$15.99 - money
 
 2.Explain when a database would be used. Explain when a text file would be used.
 
@@ -61,6 +61,9 @@ SELECT email, signup
 FROM users
 WHERE name = 'DeAndre Data';
 
+EMAIL                   SIGNUP
+datad@comcast.net       2008-01-20
+
 
 The user ID for the user with email 'aleesia.algorithm@uw.edu'.
 ------------
@@ -68,9 +71,15 @@ SELECT userid
 FROM users
 WHERE email = 'aleesia.algorithm@uw.edu';
 
+USERID
+1
+
 
 All the columns for the user ID equal to 4.
 ------------
 SELECT *
 FROM users
 WHERE userid = '4';
+
+USERID          NAME                 EMAIL                  SIGNUP
+4               Brandy Boolean       bboolean@nasa.gov      1999-10-15
